@@ -1,3 +1,5 @@
+@anim-length-scale: 2s;
+
 .Brick {
 	width: 89px;
 	transition: all 1s;
@@ -16,7 +18,7 @@
     margin-top: 19px;
 
     .move-down-keyframes;
-		.animation(1s, 0.5s);
+		.animation(1s, 0.1 * @anim-length-scale);
 	}
 
 	&--bottom-front {
@@ -24,7 +26,7 @@
 		z-index: 1;
 
 		.move-down-keyframes;
-		.animation(1s, 0.8s);
+		.animation(1s, 0.25 * @anim-length-scale);
 	}
 
 	&--bottom-left {
@@ -32,7 +34,7 @@
 		margin-left: -44px;
 
 		.move-down-keyframes;
-		.animation(1s, 1.3s);
+		.animation(1s, 0.3 * @anim-length-scale);
 	}
 
 	// MIDDLE ROW
@@ -41,7 +43,7 @@
 		margin-top: -46px;
 
 		.move-down-keyframes;
-		.animation(1s, 1.7s);
+		.animation(1s, 0.4 * @anim-length-scale);
 	}
 
 	&--middle-right {
@@ -49,7 +51,7 @@
 		margin-left: 44px;
 
 		.move-down-keyframes;
-		.animation(1s, 2.2s);
+		.animation(1s, 0.6 * @anim-length-scale);
 	}
 
 	&--middle-front {
@@ -57,7 +59,8 @@
 		margin-top: -8px;
 
 		.move-down-keyframes;
-		.animation(1s, 2.6s);
+		.animation(1s, 0.5 * @anim-length-scale);
+		
 	}
 
 	&--middle-left {
@@ -65,7 +68,7 @@
     margin-top: -27px;
 
     .move-down-keyframes;
-		.animation(1s, 3.1s);
+		.animation(1s, 0.7 * @anim-length-scale);
 	}
 
 	// TOP ROW
@@ -74,7 +77,7 @@
     margin-top: -92px;
 
     .move-down-keyframes;
-		.animation(1s, 3.6s);
+		.animation(1s, 0.8 * @anim-length-scale);
 	}
 
 	&--top-right {
@@ -82,7 +85,7 @@
     margin-left: 44px;
 
 		.move-down-keyframes;
-		.animation(1s, 4s);
+		.animation(1s, 0.87 * @anim-length-scale);
 	}
 
 	&--top-front {
@@ -90,7 +93,7 @@
     margin-top: -54px;
 
     .move-down-keyframes;
-		.animation(1s, 4.5s);
+		.animation(1s, 1.0 * @anim-length-scale);
 	}
 
 	&--top-left {
@@ -98,7 +101,8 @@
     margin-left: -44px;
 
     .move-down-keyframes;
-		.animation(1s, 4.9s);
+    .animation(1s, 0.96 * @anim-length-scale);
+		
 	}
 
 	// COLORS
