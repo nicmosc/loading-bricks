@@ -1,66 +1,104 @@
 .Brick {
 	width: 89px;
+	transition: all 1s;
 
 	// BOTTOM ROW
 
 	&--bottom-back {
+		.move-down-keyframes;
+		.animation(1s, 0s);
+		// .animation(move-down 1s ease 0s infinite);
+		// name, duration, timing function, delay, count, direction
 	}
 
 	&--bottom-right {
     margin-left: 44px;
     margin-top: 19px;
+
+    .move-down-keyframes;
+		.animation(1s, 0.5s);
 	}
 
 	&--bottom-front {
 		margin-top: 38px;
 		z-index: 1;
+
+		.move-down-keyframes;
+		.animation(1s, 0.8s);
 	}
 
 	&--bottom-left {
 		margin-top: 19px;
 		margin-left: -44px;
+
+		.move-down-keyframes;
+		.animation(1s, 1.5s);
 	}
 
 	// MIDDLE ROW
 
 	&--middle-back {
 		margin-top: -46px;
+
+		.move-down-keyframes;
+		.animation(1s, 2s);
 	}
 
 	&--middle-right {
 		margin-top: -27px;
 		margin-left: 44px;
+
+		.move-down-keyframes;
+		.animation(1s, 2.4s);
 	}
 
 	&--middle-front {
 		z-index: 2;
 		margin-top: -8px;
+
+		.move-down-keyframes;
+		.animation(1s, 2.9s);
 	}
 
 	&--middle-left {
     margin-left: -44px;
     margin-top: -27px;
+
+    .move-down-keyframes;
+		.animation(1s, 3.3s);
 	}
 
 	// TOP ROW
 
 	&--top-back {
     margin-top: -92px;
+
+    .move-down-keyframes;
+		.animation(1s, 3.8s);
 	}
 
 	&--top-right {
 		margin-top: -73px;
     margin-left: 44px;
+
+		.move-down-keyframes;
+		.animation(1s, 4.3s);
 	}
 
 	&--top-front {
 		z-index: 3;
     margin-top: -54px;
+
+    .move-down-keyframes;
+		.animation(1s, 4.8s);
 	}
 
 	&--top-left {
 		margin-top: -73px;
     margin-left: -44px;
+
+    .move-down-keyframes;
+		.animation(1s, 5.2s);
 	}
 
 	// COLORS
