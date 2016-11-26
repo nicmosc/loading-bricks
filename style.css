@@ -81,7 +81,10 @@ html {
 }
 .container {
   display: flex;
-  transform: translate3d(0, -50vh, 0) scale(0.7);
+  transform: translate3d(0, -100vh, 0) scale(0.7);
+}
+.Brick {
+  transform: translate3d(0, 150vh, 0);
 }
 .abs {
   position: absolute;
