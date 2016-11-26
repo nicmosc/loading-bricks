@@ -1,15 +1,14 @@
-@anim-length-scale: 2s;
-
 .Brick {
 	width: 89px;
+	position: absolute;
 	transition: all 1s;
 
 	// BOTTOM ROW
 
 	&--bottom-back {
 		.move-down-keyframes;
-		.animation(1s, 0s);
-		// .animation(move-down 1s ease 0s infinite);
+		.animation-move-down(1s, 0s);
+		// .animation-move-down(move-down 1s ease 0s infinite);
 		// name, duration, timing function, delay, count, direction
 	}
 
@@ -18,7 +17,7 @@
     margin-top: 19px;
 
     .move-down-keyframes;
-		.animation(1s, 0.1 * @anim-length-scale);
+		.animation-move-down(1s, 0.1 * @anim-length-scale);
 	}
 
 	&--bottom-front {
@@ -26,7 +25,7 @@
 		z-index: 1;
 
 		.move-down-keyframes;
-		.animation(1s, 0.25 * @anim-length-scale);
+		.animation-move-down(1s, 0.25 * @anim-length-scale);
 	}
 
 	&--bottom-left {
@@ -34,7 +33,7 @@
 		margin-left: -44px;
 
 		.move-down-keyframes;
-		.animation(1s, 0.3 * @anim-length-scale);
+		.animation-move-down(1s, 0.3 * @anim-length-scale);
 	}
 
 	// MIDDLE ROW
@@ -43,7 +42,7 @@
 		margin-top: -46px;
 
 		.move-down-keyframes;
-		.animation(1s, 0.4 * @anim-length-scale);
+		.animation-move-down(1s, 0.4 * @anim-length-scale);
 	}
 
 	&--middle-right {
@@ -51,7 +50,7 @@
 		margin-left: 44px;
 
 		.move-down-keyframes;
-		.animation(1s, 0.6 * @anim-length-scale);
+		.animation-move-down(1s, 0.6 * @anim-length-scale);
 	}
 
 	&--middle-front {
@@ -59,7 +58,7 @@
 		margin-top: -8px;
 
 		.move-down-keyframes;
-		.animation(1s, 0.5 * @anim-length-scale);
+		.animation-move-down(1s, 0.5 * @anim-length-scale);
 		
 	}
 
@@ -68,7 +67,7 @@
     margin-top: -27px;
 
     .move-down-keyframes;
-		.animation(1s, 0.7 * @anim-length-scale);
+		.animation-move-down(1s, 0.7 * @anim-length-scale);
 	}
 
 	// TOP ROW
@@ -77,7 +76,7 @@
     margin-top: -92px;
 
     .move-down-keyframes;
-		.animation(1s, 0.8 * @anim-length-scale);
+		.animation-move-down(1s, 0.8 * @anim-length-scale);
 	}
 
 	&--top-right {
@@ -85,7 +84,7 @@
     margin-left: 44px;
 
 		.move-down-keyframes;
-		.animation(1s, 0.87 * @anim-length-scale);
+		.animation-move-down(1s, 0.87 * @anim-length-scale);
 	}
 
 	&--top-front {
@@ -93,7 +92,7 @@
     margin-top: -54px;
 
     .move-down-keyframes;
-		.animation(1s, 1.0 * @anim-length-scale);
+		.animation-move-down(1s, 1.0 * @anim-length-scale);
 	}
 
 	&--top-left {
@@ -101,8 +100,7 @@
     margin-left: -44px;
 
     .move-down-keyframes;
-    .animation(1s, 0.96 * @anim-length-scale);
-		
+    .animation-move-down(1s, 0.96 * @anim-length-scale);
 	}
 
 	// COLORS

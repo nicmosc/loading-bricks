@@ -1,8 +1,11 @@
+@anim-length-scale: 2s;
+@falling-length-scale: 2.5s;
+
 .keyframes(@name; @arguments) {
 	@keyframes @name { @arguments(); }
 }
 
-.animation(@duration; @delay) {
+.animation-move-down(@duration; @delay) {
 	animation-name: move-down;
   animation-duration: @duration;
   animation-timing-function: ease-in;
@@ -12,12 +15,16 @@
   animation-fill-mode: forwards;
 }
 
+.animation-fall-down(@duration; @delay) {
+	animation-name: fall-down;
+  animation-duration: @duration;
+  animation-timing-function: ease-in;
+  animation-delay: @delay + 2s;
+  animation-fill-mode: forwards;
+}
+
 .move-down-keyframes {
 	.keyframes(move-down; {
-		// to {
-		// 	transform: translate3d(0, 140vh, 0);
-		// }
-
 		90% {
 			transform: translate3d(0, 140vh, 0);
 		}
@@ -28,4 +35,63 @@
 			transform: translate3d(0, 140vh, 0);
 		}
 	});
+}
+
+.fall-down-keyframes {
+	.keyframes(fall-down; {
+		to {
+			transform: translate3d(0, 250vh, 0);
+		}
+	});
+}	
+
+// FALLING DOWN ANIMATIONS 
+
+.bottom-back {
+	.fall-down-keyframes;
+	.animation-fall-down(0.35*@falling-length-scale, @anim-length-scale);
+}
+.bottom-right {
+	.fall-down-keyframes;
+	.animation-fall-down(0.2*@falling-length-scale, @anim-length-scale);
+}
+.bottom-front {
+	.fall-down-keyframes;
+	.animation-fall-down(0.15*@falling-length-scale, @anim-length-scale);
+}
+.bottom-left {
+	.fall-down-keyframes;
+	.animation-fall-down(0.25*@falling-length-scale, @anim-length-scale);
+}
+.middle-back {
+	.fall-down-keyframes;
+	.animation-fall-down(0.46*@falling-length-scale, @anim-length-scale);
+}
+.middle-right {
+	.fall-down-keyframes;
+	.animation-fall-down(0.4*@falling-length-scale, @anim-length-scale);
+}
+.middle-front {
+	.fall-down-keyframes;
+	.animation-fall-down(0.3*@falling-length-scale, @anim-length-scale);
+}
+.middle-left {
+	.fall-down-keyframes;
+	.animation-fall-down(0.38*@falling-length-scale, @anim-length-scale);
+}
+.top-back {
+	.fall-down-keyframes;
+	.animation-fall-down(0.5*@falling-length-scale, @anim-length-scale);
+}
+.top-right {
+	.fall-down-keyframes;
+	.animation-fall-down(0.45*@falling-length-scale, @anim-length-scale);
+}
+.top-front {
+	.fall-down-keyframes;
+	.animation-fall-down(0.48*@falling-length-scale, @anim-length-scale);
+}
+.top-left {
+	.fall-down-keyframes;
+	.animation-fall-down(0.4*@falling-length-scale, @anim-length-scale);
 }

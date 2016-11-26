@@ -1,5 +1,6 @@
 .Brick {
   width: 89px;
+  position: absolute;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -356,22 +357,22 @@
   fill: #e7d803;
 }
 .Brick--red .light {
-  fill: #ED1C24;
+  fill: #DB4437;
 }
 .Brick--red .dark {
-  fill: #c61017;
+  fill: #bd2e22;
 }
 .Brick--blue .light {
-  fill: #0071BC;
+  fill: #4285F4;
 }
 .Brick--blue .dark {
-  fill: #005289;
+  fill: #1266f1;
 }
 .Brick--green .light {
-  fill: #009245;
+  fill: #0F9D58;
 }
 .Brick--green .dark {
-  fill: #005f2d;
+  fill: #0b6e3e;
 }
 @keyframes move-down {
   90% {
@@ -385,6 +386,234 @@
   100% {
     -webkit-transform: translate3d(0, 140vh, 0);
             transform: translate3d(0, 140vh, 0);
+  }
+}
+@-webkit-keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.bottom-back {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 0.875s;
+          animation-duration: 0.875s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.bottom-right {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.bottom-front {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 0.375s;
+          animation-duration: 0.375s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.bottom-left {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 0.625s;
+          animation-duration: 0.625s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.middle-back {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 1.15s;
+          animation-duration: 1.15s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.middle-right {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.middle-front {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.middle-left {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 0.95s;
+          animation-duration: 0.95s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.top-back {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.top-right {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 1.125s;
+          animation-duration: 1.125s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.top-front {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
+  }
+}
+.top-left {
+  -webkit-animation-name: fall-down;
+          animation-name: fall-down;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes fall-down {
+  to {
+    -webkit-transform: translate3d(0, 250vh, 0);
+            transform: translate3d(0, 250vh, 0);
   }
 }
 body,
