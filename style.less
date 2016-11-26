@@ -1,8 +1,7 @@
+@import 'colors.less';
+@import 'brick.less';
+
 @scale: 0.7;
-@red: #ED1C24;
-@blue: #0071BC;
-@green: #009245;
-@yellow: #FCEE21;
 
 
 body,
@@ -22,114 +21,7 @@ html {
 
 .container {
 	display: flex;
-	transform: scale(@scale);
-}
-
-.Brick {
-	width: 89px;
-
-	// BOTTOM ROW
-
-	&--bottom-back {
-	}
-
-	&--bottom-right {
-    margin-left: 44px;
-    margin-top: 19px;
-	}
-
-	&--bottom-front {
-		margin-top: 38px;
-		z-index: 1;
-	}
-
-	&--bottom-left {
-		margin-top: 19px;
-		margin-left: -44px;
-	}
-
-	// MIDDLE ROW
-
-	&--middle-back {
-		margin-top: -46px;
-	}
-
-	&--middle-right {
-		margin-top: -27px;
-		margin-left: 44px;
-	}
-
-	&--middle-front {
-		z-index: 2;
-		margin-top: -8px;
-	}
-
-	&--middle-left {
-    margin-left: -44px;
-    margin-top: -27px;
-	}
-
-	// TOP ROW
-
-	&--top-back {
-    margin-top: -92px;
-	}
-
-	&--top-right {
-		margin-top: -73px;
-    margin-left: 44px;
-	}
-
-	&--top-front {
-		z-index: 3;
-    margin-top: -54px;
-	}
-
-	&--top-left {
-		margin-top: -73px;
-    margin-left: -44px;
-	}
-
-	// COLORS
-
-	&--yellow {
-		.light {
-			fill: @yellow
-		}
-		.dark {
-			fill: darken(@yellow, 10%);
-		}
-	}
-
-	&--red {
-		.light {
-			fill: @red;
-		}
-
-		.dark {
-			fill: darken(@red, 10%);
-		}
-	}
-
-	&--blue {
-		.light {
-			fill: @blue;
-		}
-
-		.dark {
-			fill: darken(@blue, 10%);
-		}
-	}
-
-	&--green {
-		.light {
-			fill: @green;
-		}
-
-		.dark {
-			fill: darken(@green, 10%);
-		}
-	}
+	transform: translate3d(0,-50vh, 0) scale(@scale);
 }
 
 .abs {
