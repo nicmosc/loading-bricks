@@ -641,6 +641,3 @@ html {
   -webkit-transform: translate3d(-31px, -100vh, 0) scale(0.7);
           transform: translate3d(-31px, -100vh, 0) scale(0.7);
 }
-.abs {
-  position: absolute;
-}
